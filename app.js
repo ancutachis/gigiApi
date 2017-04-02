@@ -51,6 +51,6 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 // connect to MongoDB
 // mongoose.connect('mongodb://localhost/BrightManiaApi')
-mongoose.connect('mongodb://ancuta:gigiaremere@ds145220.mlab.com:45220/bright-mania')
+mongoose.connect('mongodb://ancuta:anaaremere@ds145220.mlab.com:45220/bright-mania')
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
