@@ -26,5 +26,13 @@ router.get('/:id', function(req, res, next) {
   });
 });
 
+/* PUT /products/:id */
+router.put('/:id', function(req, res, next) {
+  Product.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+    if (err) return next(err);
+    res.json(post);
+  });
+});
+
 module.exports = router;
 
