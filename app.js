@@ -9,7 +9,8 @@ var index = require('./routes/index');
 var products = require('./routes/products');
 
 var app = express();
-
+var cors = requires(cors);
+app.use(cors{origin: 'http://localhost:4200'});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
